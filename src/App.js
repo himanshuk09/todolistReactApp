@@ -57,8 +57,9 @@ class App extends Component {
     const items = this.state.items;
     items.map(item => {
       if (item.key === key) { 
-        item.text=text
+        return item.text=text
       }
+      return 0;
     })
     this.setState({
       items:items,
